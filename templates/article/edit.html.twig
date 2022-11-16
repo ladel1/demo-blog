@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block titre %}Modifier un article{% endblock %}
+
+
+{% block contenu %}
+
+<div class="row text-center mt-5">
+    <h1>Modifier un article</h1>
+</div>
+
+<div class="row mt-5">
+    <div class="col-6 offset-3">
+        {{ form_start(articleForm) }}
+            {{ form_widget(articleForm) }}
+       
+            {# <div class="mb-3">
+                <label class="form-label" for="">Date de creation</label>
+                <input type="date" class="form-control" name="{{field_name(articleForm.dateCreated)}}" id="">
+            </div> #}
+
+            <button class="btn btn-primary" type="submit" >Modifier</button>
+        {{ form_end(articleForm) }}
+    </div>
+</div>
+
+{% endblock %}

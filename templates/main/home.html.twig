@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block contenu %}
+
+    <h1>Accueil</h1>
+    <a href="{{ url('app_main_home') }}">Accueil</a>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, esse rem harum eligendi fugit possimus. Maxime, voluptas officia iure velit vero animi ea quaerat adipisci incidunt corrupti a vitae quo?
+    </p>
+    <p>
+        {{name}}
+    </p>
+
+{% endblock %}
+
+
+{% block titre %}Accueil{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('css/home-style.css') }}">
+{% endblock %}
